@@ -194,7 +194,7 @@ client.on('messageCreate', async (message) => {
   if (command === '!!authlink') {
     const authLink = `${process.env.BASE_URL}/login`;
     await message.channel.send({
-      content: `**Authorize CodeBlue to Secure Your Membership**\n\nClick the link below to authorize the bot. This will allow us to re-invite you to the server if it is ever recreated.\n\n> ${authLink}`
+      content: `# Authorize CodeBlue to Secure Your Status in the Server!\n\nClick the link below to authorize the bot. This will allow us to **AUTOMATICALLY** re-invite you to the server if it is ever recreated.\n\n> ${authLink}`
     });
     console.log(`[BOT] Generated auth link for ${message.author.tag}`);
   }
